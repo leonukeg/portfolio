@@ -323,3 +323,38 @@ header{
 }
 
 
+@media only screen and (max-width: 768px) {
+    /* Reglas CSS específicas para pantallas menores o iguales a 768px */
+    .navbar {
+        flex-direction: column;
+        text-align: center;
+    }
+    .menu {
+        flex-direction: column;
+        width: 100%;
+    }
+    .main {
+        grid-template-columns: 1fr;
+        width: 90vw;
+    }
+    .about {
+        grid-template-columns: 1fr;
+    }
+    .about img {
+        grid-column: 1 / -1;
+        margin: 0 auto;
+    }
+    .about-info {
+        grid-column: 1 / -1;
+        padding: 1em;
+        text-align: center;
+    }
+    .portfolio .container {
+        flex-direction: column;
+    }
+    .card {
+        width: 80%;
+    }
+}
+
+
